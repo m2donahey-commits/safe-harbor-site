@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Safe Harbor — Home</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f7f9f6; /* soft cream */
+    color: #2c3e50; /* slate grey */
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: #E3F2FD; /* light blue header */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #2196F3; /* medium blue */
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #0D47A1; /* darker blue on hover */
+}
+
+nav a.active {
+  color: #4CAF50; /* green for active page */
+}
+      /* Page Layout */
+    main {
+      max-width: 1200px;
+      margin: 2.5rem auto;
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h1, h2 {
+      color: #356a75; /* calming blue-green */
+    }
+
+    h1 {
+      text-align: center;
+      color: #4CAF50; /* soft green */
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      border-left: 5px solid #4e7c6b;
+      padding-left: 10px;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1.2rem;
+      background: #eef5f1; /* very light green-grey */
+      padding: 1rem;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+
+    /* Call to Action */
+    .cta-section {
+      text-align: center;
+      margin-top: 3rem;
+      background-color: #E8F5E9; /* light green tint */
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 24px;
+      background-color: #64B5F6; /* medium blue */
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .cta-button:hover {
+      background-color: #42A5F5;
+    }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    background: #f7f9f6; /* soft cream */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .hero-text {
+    flex: 1 1 400px;
+  }
+
+  .hero h1 {
+    color: #2a5d59;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .hero img {
+    flex: 1 1 400px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .feature {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+  }
+
+  .feature:hover {
+    transform: scale(1.02);
+  }
+
+  .feature h3 {
+    color: #356a75;
+    margin-top: 0;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #4e7c6b;
+    color: white;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+  }
+/* Quick Exit */
+  .quick-exit {
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    background: #e57373;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .quick-exit:hover {
+    background: #ef5350;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Safe Harbor Logo" style="height:120px;">
+    </a>
+    <div style="font-weight:800;font-size:18px;color:#2c3e50;">
+      Finding Safety, Support, and Strength
+    </div>
+  </div>
+
+  <nav style="display:flex;align-items:center;gap:20px;">
+    <a href="index.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="map.html" class="nav-btn">Resource Map</a>
+    <a href="toolkit.html" class="nav-btn">Survivor Toolkit</a>
+    <a href="family.html" class="nav-btn">For Friends & Family</a>
+    <a href="tel:+18007997233" class="hotline" style="font-weight:bold;">📞 1-800-799-7233</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Safe Harbor</h1>
+      <p>When life feels uncertain, Safe Harbor helps you find your way. We are a trauma-informed online resource hub for survivors of domestic abuse and the people who care about them.</p>
+      <p>Here, you’ll find tools, information, and local support designed to make your next step a little clearer — and a little safer.</p>
+      <a href="map.html" class="cta-button">Find Help Nearby</a>
+    </div>
+    <img src="images/Support.png" alt="Safe Harbor welcome image".
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>💙 Learn About Safe Harbor</h3>
+      <p>Discover our mission, vision, and the values that guide our work in supporting survivors with compassion and respect.</p>
+      <a href="about.html" class="cta-button" style="background:#4e7c6b;">About Us</a>
+    </div>
+
+    <div class="feature">
+      <h3>🌿 Survivor Toolkit</h3>
+      <p>Access guides and information about what to expect when seeking help, from safety planning to connecting with advocates.</p>
+      <a href="toolkit.html" class="cta-button" style="background:#356a75;">Open Toolkit</a>
+    </div>
+
+    <div class="feature">
+      <h3>🫶🏽 For Friends & Family</h3>
+      <p>Learn how to support a loved one who is experiencing abuse, with compassion, understanding, and safety in mind.</p>
+      <a href="family.html" class="cta-button" style="background:#64b5f6;">Learn More</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Safe Harbor | Empowering Survivors, Strengthening Communities
+</footer>
+
+<button class="quick-exit" id="quickExitBtn">Exit</button>
+
+<script>
+document.getElementById('quickExitBtn').addEventListener('click', () => {
+  window.location.replace('https://www.google.com');
+});
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape' || ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'q')) {
+    window.location.replace('https://www.google.com');
+  }
+});
+</script>
+</body>
+</html>
+
