@@ -1,0 +1,296 @@
+:root {
+  --bg: #FAF8F4;
+  --accent: #D7E3C1;
+  --highlight: #A5BE8C;
+  --btn: #6A994E;
+  --btn-hover: #386641;
+  --text: #2C2C2C;
+  --card-radius: 14px;
+  --maxw: 1100px;
+  --shadow: 0 6px 18px rgba(44, 44, 44, 0.08);
+
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: var(--card-radius);
+}
+
+/* HEADERS & WRAPPER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--accent);
+  padding: 12px 0;
+  box-shadow: var(--shadow);
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* BRAND */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--highlight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background: var(--highlight);
+  color: white;
+}
+
+/* HOTLINE BUTTON */
+.hotline {
+  margin-left: auto;
+  background: var(--btn);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.hotline:hover {
+  background: var(--btn-hover);
+}
+
+/* MAIN */
+main {
+  max-width: var(--maxw);
+  margin: 18px auto;
+  padding: 0 18px;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: var(--card-radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+/* BUTTONS */
+.btn {
+  background: var(--btn);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--btn-hover);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--btn);
+  border: 1px solid var(--btn);
+}
+
+/* GRID LAYOUTS */
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+.two-col {
+  grid-template-columns: 1fr 420px;
+}
+
+/* LISTS */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* RESOURCE ITEM */
+.resource {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 14px;
+  border-radius: var(--card-radius);
+  background: var(--accent);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.resource:hover {
+  background: var(--highlight);
+  color: white;
+}
+
+.resource .icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* SEARCH FIELD */
+input[type="search"] {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 250px;
+}
+
+/* ASIDE */
+.aside {
+  background: var(--accent);
+  padding: 14px;
+  border-radius: var(--card-radius);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: var(--text);
+  padding: 18px 10px;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+/* QUICK EXIT BUTTON */
+.quick-exit {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  background: var(--text);
+  color: white;
+  padding: 12px 14px;
+  border-radius: 999px;
+  z-index: 80;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(44, 44, 44, 0.2);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 880px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav-btn {
+    padding: 6px 10px;
+    font-size: 15px;
+  }
+
+  .hotline {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 550px) {
+  header .wrap {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .nav-btn,
+  .hotline {
+    width: 100%;
+    text-align: center;
+  }
+}
